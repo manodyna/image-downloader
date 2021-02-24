@@ -1,3 +1,4 @@
+// downloads the images on button click
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     if (request.action === "download") {
         for(let i = 0; i < request.data.length; i++){
